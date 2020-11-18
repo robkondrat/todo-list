@@ -1,7 +1,13 @@
 import React from 'react';
 
-function ToDo() {
-
+const ToDo = ({toDo}) => {
+  return (
+    <div>
+      <div className={toDo.complete ? "strike" : ""}>
+        {toDo.task}
+      </div>
+    </div>
+  )
 }
 
 export default ToDo;
